@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "retryback"
+version = "0.1.0"
+description = "Tiny retry decorator with exponential backoff and jitter."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "nripankadas07" }]
+keywords = ["retry", "backoff", "decorator", "exponential", "jitter"]
+requires-python = ">=3.9"
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[project.urls]
+Homepage = "https://github.com/nripankadas07/retryback"
+
+[tool.setuptools.packages.find]
+where = ["src"]
