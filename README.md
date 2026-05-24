@@ -20,7 +20,7 @@ except RetryError as exc:
 ## Install
 
 ```bash
-pip install retryback
+python -m pip install -e .
 ```
 
 From source:
